@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    /* background: rgb(225, 223, 223); */
+}
+
+
+.resumeDiv{
+    width: 70%;
+    /* padding: 1%; */
+    border: 2px black solid;
+
+}
+
+header{
+    width: 100%;
+    height: 160px;
+    /* background-color: rgb(194, 194, 236); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(rgba(0,0,0,0), rgba(67, 50, 252, 0.985));
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.white{
+    color: whitesmoke;
+}
+
+header img{
+    width: 150px;
+    height: 160px;
+    border-radius: 50%;
+    
+}
+
+.content{
+    width: 100%;
+    display: flex;
+}
+
+.content aside{
+    width: 30%;
+    /* background-color: rgb(120, 120, 131); */
+    padding-left: 50px;
+    padding-bottom: 50px;
+    /* background: gray; */
+}
+
+.contact, 
+.education, 
+.skill, 
+.language{
+    margin-bottom: 30px;
+
+}
+
+.contact h2, .education h2, .skill h2, .language h2, .experience h2, .refrence h2{
+    border-bottom: 1px solid rgb(52, 10, 242);
+    margin-bottom: 20px;
+    padding-bottom: 3px;
+    color: blue;
+}
+
+
+
+.education{
+    line-height: 20px;
+}
+
+.skill ul{
+    margin-left: 18px;
+}
+
+
+.main-content{
+    width: 70%;
+    padding-left: 50px;
+    background-color: white;
+}
+
+
+.experience-items{
+    margin-bottom: 54px;
+}
+
+
+.experience-items p{
+    margin-bottom: 5px;
+}
+
+.experience-items ul{
+    margin-left: 18px;
+    margin-top: 15px;
+}
+
+.btnDiv{
+    width: 70%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: rgb(68, 41, 8); */
+    margin-top: 30px;
+}
+
+.btn{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 14px;
+    border-radius: 8px;
+    color: white;
+    background: blue;
+    cursor: pointer;
+
+    &:hover{
+        background: rgb(97, 97, 251);
+    
+    }
+
+    &:active{
+        transform: scale(0.95);
+    }
+}
+
+
+.hide{
+    display: none;
+}
+
+@media print{
+    .btnDiv{
+        display: none;
+    }
+}
+
+
+@media (max-width: 786px){
+    .content{
+        flex-direction: column;
+    }
+
+    /* .content h2{
+        color: black;
+    } */
+
+    aside, .main-content{
+     width: 100%;
+    }
+}
